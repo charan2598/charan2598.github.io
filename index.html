@@ -1,17 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="./style.css" type="text/css"/>
-        <link rel="stylesheet" href="./mediaqueries.css" type="text/css"/>
-    </head>
-    <body>
-        <nav id="desktop-nav">
-            <div class="logo">Charan Kumar Selvam</div>
-            <div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="stylesheet" href="./mediaqueries.css" type="text/css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Charan Kumar Selvam</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Charan Kumar Selvam</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Charan Kumar Selvam profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Charan Kumar Selvam</h1>
+            <p class="section__text__p2">Machine Learning Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/charan2598/'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/charan2598'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>
+                            4+ years <br />Software Development and ML(Computer Vision)
+                            experience
+                        </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.E. Bachelors Degree in CS<br />M.Sc. Masters Degree in CS</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Energetic, self-motivated, detail-oriented, and result-driven
+                        engineer passionate about learning new technologies, with 4+ years
+                        of experience in the software and AI industry seeking a
+                        challenging full-time role to grow and develop my skills in the
+                        fields of Computer Vision, Machine Learning, and Software
+                        development.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="experience-containers">
+                <!-- Hypothetic Experience -->
+                <div class="experience-card">
+                    <div class="experience-card__header">
+                        <div class="experience-card__header__logo-container">
+                            <div class="experience-card__header__logo-container__logo">
+                                <a href="https://www.hypothetic.art/" target="_blank"><img src="./assets/hypothetic.png"
+                                        alt="Hypothetic" /></a>
+                            </div>
+                            <div class="experience-card__header__logo-container__name">
+                                Hypothetic
+                            </div>
+                        </div>
+                        <div class="experience-card__header__designation">
+                            Machine Learning Intern (3D Computer Vision Focus)
+                        </div>
+                    </div>
+                    <div class="experience-card__body"></div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            I worked with 3D models, generating point clouds and training deep learning models, such as
+                            PointNets, to predict topological features like verts, edges, and faces for creating game
+                            asset meshes.
+                        </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            My responsibilities included enhancing PointNet++ architecture, training models, conducting
+                            experiments, and researching recent innovations in generative 3D AI to improve learnability
+                            using Python and PyTorch.
+                        </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Developed a deep learning model with 97% accuracy in predicting 3D orientations, created a
+                            Dockerized API with the model in ONNX format for efficient CPU deployment, and benchmarked
+                            inference times on GPU and CPU.
+                        </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Optimized a 3D alignment model by reducing the VGG-16 embedding size by 70% used for
+                            similarity search, and reduced processing time by 40% without changing predictive accuracy.
+                        </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/tools.png" alt="Tools icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Tools used: Python, Pytorch, Pytorch3D, Kaolin, Numpy, Scipy, ONNX, ONNXRunTime, AWS, FastAPI, PointNets, WanDB.</div>
+                    </div>
+                    <div class="experience-card__footer">
+                        <div>May 2023 - Jan 2024 | Vancouver, Canada</div>
+                    </div>
+                </div>
+                <!-- Extreme Networks Experience -->
+                <div class="experience-card">
+                    <div class="experience-card__header">
+                        <div class="experience-card__header__logo-container">
+                            <div class="experience-card__header__logo-container__logo">
+                                <a href="https://www.extremenetworks.com/" target="_blank"><img
+                                        src="./assets/extreme-networks.png" alt="Extreme Network" /></a>
+                            </div>
+                            <div class="experience-card__header__logo-container__name">
+                                Extreme Networks
+                            </div>
+                        </div>
+                        <div class="experience-card__header__designation">
+                            Associate Software Engineer
+                        </div>
+                    </div>
+                    <div class="experience-card__body"></div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Contributed to the integration of 6GHz band (Wi-Fi 6E) support in WingOS modules for Access
+                            Points and Controllers, while also resolving priority customer-reported defects.
+                        </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Worked on developing a WIPS feature for terminating WPA3 connections using role-based
+                            firewalls.
+                        </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Enhanced SNMP features by optimizing and implementing caches to speed up bulk response times
+                            when used with intensive network monitoring tools like Statseeker.
+                        </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Supported synthetic NICs on Cloud Controllers deployed on Microsoft Azure and Hyper-V
+                            instances.
+                        </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Designed and prototyped an ETL pipeline to collect network statistics from APs and transmit
+                            them to InfluxDB using Telegraf, enabling comprehensive real-time network monitoring.
+                        </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Developed several features and command line functionalities for WiNG OS and also handled
+                            system maintenance. </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/tools.png" alt="Tools icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Tools used: C, C++, Python, Wireshark, GDB, Azure, InfluxDBv2, Grafana, Make, Bash Shell.</div>
+                    </div>
+                    <div class="experience-card__footer">
+                        <div>Aug 2019 - Aug 2022 | Bengaluru, India</div>
+                    </div>
+                </div>
+                <!-- Contriver Experience -->
+                <div class="experience-card">
+                    <div class="experience-card__header">
+                        <div class="experience-card__header__logo-container">
+                            <div class="experience-card__header__logo-container__logo">
+                                <a href="https://contriver.co.in/" target="_blank"><img src="./assets/contriver.png"
+                                        alt="Contriver" /></a>
+                            </div>
+                            <div class="experience-card__header__logo-container__name">
+                                Contriver (Freelance)
+                            </div>
+                        </div>
+                        <div class="experience-card__header__designation">
+                            ML Project Lead and Mentor
+                        </div>
+                    </div>
+                    <div class="experience-card__body"></div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            I mentored an intern group of close to 25 students on multiple projects involving Predictive
+                            Maintenance for On-Road Wind Turbines and Energy Output Estimation based on Vision-based
+                            Vehicular Speed Prediction. </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Prototyped both projects with real-time sensor data and video data for one turbine setup.
+                        </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/tools.png" alt="Tools icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Tools used: Python, Pandas, Scikit-Learn.</div>
+                    </div>
+                    <div class="experience-card__footer">
+                        <div>May 2019 - Jul 2019 | Bengaluru, India</div>
+                    </div>
+                </div>
+                <!-- Renovus Vision Automation Experience -->
+                <div class="experience-card">
+                    <div class="experience-card__header">
+                        <div class="experience-card__header__logo-container">
+                            <div class="experience-card__header__logo-container__logo">
+                                <a href="https://www.renovus.in/" target="_blank"><img
+                                        src="./assets/renovus-vision-automation.png"
+                                        alt="Renovus Vision Automation" /></a>
+                            </div>
+                            <div class="experience-card__header__logo-container__name">
+                                Renovus Vision Automation
+                            </div>
+                        </div>
+                        <div class="experience-card__header__designation">
+                            ML Research Intern
+                        </div>
+                    </div>
+                    <div class="experience-card__body"></div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Conducted research to leverage 3D Point Cloud data for advanced dimensional inspection and
+                            defect detection, focusing on overcoming occlusion and depth estimation challenges in 2D
+                            imagery.
+                        </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Conceptualized and prototyped a system for precise 3D object dimension estimation using
+                            PointNet++ Part Segmentation, following extensive PointCloud data gathering, labeling, and
+                            augmentation.
+                        </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Enhanced system efficiency by integrating YOLO-based object detection algorithms for
+                            high-speed quality inspections, achieving an 18% reduction in processing time. </div>
+                    </div>
+                    <div class="experience-card__body__description">
+                        <div class="experience-card__body__description__pointer">
+                            <img src="./assets/tools.png" alt="Tools icon" class="icon" />
+                        </div>
+                        <div class="experience-card__body__description__content">
+                            Tools used: C++, Python, OpenGL, ONNX, Pytorch.</div>
+                    </div>
+                    <div class="experience-card__footer">
+                        <div>Dec 2018 - Mar 2019 | Bengaluru, India</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <!-- TODO: Edit this entire section please -->
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="project__description__points">
+                        <ul>
+                            <li>sample sample sample</li>
+                            <li>sample sample sample</li>
+                        </ul>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <!-- TODO: Add Phone number please -->
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:charan2598@gmail.com">charan2598@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/charan2598/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
@@ -20,241 +442,9 @@
                 </ul>
             </div>
         </nav>
-        <nav id="hamburger-nav">
-            <div class="logo">Charan Kumar Selvam</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
-            </div>
-        </nav>
-        <section id="profile">
-            <div class="section__pic-container">
-                <img src="./assets/profile-pic.png" alt="Charan Kumar Selvam profile picture" />
-            </div>
-            <div class="section__text">
-                <p class="section__text__p1">Hello, I'm</p>
-                <h1 class="title">Charan Kumar Selvam</h1>
-                <p class="section__text__p2">Machine Learning Engineer</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
-                        Download CV
-                    </button>
-                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                        Contact Info
-                    </button>
-                </div>
-                <div id="socials-container">
-                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/charan2598/'"/>
-                    <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/charan2598'"/>
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <p class="section__text__p1">Get To Know More</p>
-            <h1 class="title">About Me</h1>
-            <div class="section-container">
-                <div class="section__pic-container">
-                    <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
-                </div>
-                <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="details-container">
-                            <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
-                            <h3>Experience</h3>
-                            <p>4+ years <br />Software Development and ML(Computer Vision) experience</p>
-                        </div>
-                        <div class="details-container">
-                            <img src="./assets/education.png" alt="Education icon" class="icon"/>
-                            <h3>Education</h3>
-                            <p>B.E. Bachelors Degree in CS<br />M.Sc. Masters Degree in CS</p>
-                        </div>
-                    </div>
-                    <div class="text-container">
-                        <p>
-                            Energetic, self-motivated, detail-oriented, and result-driven engineer passionate 
-                            about learning new technologies, with 4+ years of experience in the software and AI 
-                            industry seeking a challenging full-time role to grow and develop my skills in the 
-                            fields of Computer Vision, Machine Learning, and Software development.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
-        </section>
-        <section id="experience">
-            <!-- TODO: Edit this entire section please -->
-            <p class="section__text__p1">Explore My</p>
-            <h1 class="title">Experience</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Machine Learning Intern</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>PyTorch</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>PyTorch Lightning</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>TensorFlow</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>OpenCV</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>LLMs</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>Python</h3><p>Experienced</p></div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Associate Software Engineer</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>PyTorch</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>PyTorch Lightning</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>TensorFlow</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>OpenCV</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>LLMs</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>Python</h3><p>Experienced</p></div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">ML Research Intern</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>PyTorch</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>PyTorch Lightning</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>TensorFlow</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>OpenCV</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>LLMs</h3><p>Experienced</p></div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                                <div><h3>Python</h3><p>Experienced</p></div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
-        </section>
-        <section id="projects">
-            <!-- TODO: Edit this entire section please -->
-            <p class="section__text__p1">Browse My Recent</p>
-            <h1 class="title">Projects</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
-                        </div>
-                        <h2 class="experience-sub-title project-title">Project One</h2>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="./assets/project-2.png" alt="Project 2" class="project-img"/>
-                        </div>
-                        <h2 class="experience-sub-title project-title">Project Two</h2>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="./assets/project-3.png" alt="Project 3" class="project-img"/>
-                        </div>
-                        <h2 class="experience-sub-title project-title">Project Three</h2>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
-        </section>
-        <section id="contact">
-            <!-- TODO: Add Phone number please -->
-            <p class="section__text__p1">Get in Touch</p>
-            <h1 class="title">Contact Me</h1>
-            <div class="contact-info-upper-container">
-                <div class="contact-info-container">
-                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
-                    <p><a href="mailto:charan2598@gmail.com">charan2598@gmail.com</a></p>
-                </div>
-                <div class="contact-info-container">
-                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
-                    <p><a href="https://www.linkedin.com/in/charan2598/">LinkedIn</a></p>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <nav>
-                <div class="nav-links-container">
-                    <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <p>Thank You !!!</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+        <p>Thank You !!!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
 </html>

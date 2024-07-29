@@ -78,6 +78,12 @@
     .experience-sub-title {
         font-size: 1.25rem;
     }
+    .experience-card__header {
+        flex-direction: column;
+    }
+    .experience-card__header__logo-container__name {
+        text-align: center;
+    }
     .logo {
         font-size: 1.5rem;
     }
