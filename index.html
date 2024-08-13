@@ -403,63 +403,190 @@
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
-    <!-- <section id="projects">
+    <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            <div class="project-containers">
+                <!-- StyleGAN Project -->
+                <div class="project-card">
+                    <div class="project-card__image">
+                        <img src="./assets/project-3.png" alt="StyleGAN Project" class="project-img" />
                     </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="project__description__points">
-                        <ul>
-                            <li>sample sample sample</li>
-                            <li>sample sample sample</li>
-                        </ul>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button>
+                    <div class="project-card__content">
+                        <div class="project-card__content_title">
+                            StyleGAN Latent Vector Interpolation for Facial expression editing
+                        </div>
+                        <div class="project-card__content__points project-card__content__style">
+                            <div class="project-card__content__bullet__pointer project-card__content__pointer__style">
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            </div>
+                            <div class="project-card__content__point__content">
+                                Identified an SVM Hyperplane in StyleGAN’s Latent Vector feature Space separating Facial
+                                Expressions.
+                            </div>
+                        </div>
+                        <div class="project-card__content__points project-card__content__style">
+                            <div class="project-card__content__bullet__pointer project-card__content__pointer__style">
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            </div>
+                            <div class="project-card__content__point__content">
+                                Performed latent vector interpolation across hyperplane to modify facial expressions while
+                                preserving facial features.
+                            </div>
+                        </div>
+                        <div class="project-card__content__points project-card__content__style">
+                            <div class="project-card__content__bullet__pointer project-card__content__pointer__style">
+                                <img src="./assets/tools.png" alt="Tools icon" class="icon" />
+                            </div>
+                            <div class="project-card__content__point__content">
+                                Tools used: Python, PyTorch, SVM.
+                            </div>
+                        </div>
+                        <!-- <div class="project-card__content_link">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                                    Github
+                                </button>
+                            </div> -->
                     </div>
                 </div>
+                <!-- Diabetic Retinopathy Project -->
+                <div class="project-card">
+                    <div class="project-card__image">
+                        <img src="./assets/project-1.png" alt="Diabetic Retinopathy Project" class="project-img" />
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__content_title">
+                            Staging Diabetic Retinopathy using Retinal Images
+                        </div>
+                        <div class="project-card__content__points project-card__content__style">
+                            <div class="project-card__content__bullet__pointer project-card__content__pointer__style">
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            </div>
+                            <div class="project-card__content__point__content">
+                                Designed and developed a classifier model to assess DR severity from retinal images using
+                                Neural architecture and Image Processing achieving 94% accuracy.
+                            </div>
+                        </div>
+                        <div class="project-card__content__points project-card__content__style">
+                            <div class="project-card__content__bullet__pointer project-card__content__pointer__style">
+                                <img src="./assets/tools.png" alt="Tools icon" class="icon" />
+                            </div>
+                            <div class="project-card__content__point__content">
+                                Tools used: Python, OpenCV, K-NN.
+                            </div>
+                        </div>
+                        <div class="project-card__content_link">
+                            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                                    Github
+                                </button> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Point Cloud Compass Project -->
+                <div class="project-card">
+                    <div class="project-card__image">
+                        <img src="./assets/project-2.png" alt="Point Cloud Project" class="project-img" />
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__content_title">
+                            Point Cloud Compass
+                        </div>
+                        <div class="project-card__content__points project-card__content__style">
+                            <div class="project-card__content__bullet__pointer project-card__content__pointer__style">
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            </div>
+                            <div class="project-card__content__point__content">
+                                Developed a software system capable of visualizing Point Clouds using OpenGL and C++,
+                                enabling user-directed navigation over its surface and accurately estimating dimensions of
+                                the 3D object.
+                            </div>
+                        </div>
+                        <div class="project-card__content__points project-card__content__style">
+                            <div class="project-card__content__bullet__pointer project-card__content__pointer__style">
+                                <img src="./assets/tools.png" alt="Tools icon" class="icon" />
+                            </div>
+                            <div class="project-card__content__point__content">
+                                Tools used: C++, OpenGL.
+                            </div>
+                        </div>
+                        <div class="project-card__content_link">
+                            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                                    Github
+                                </button> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Need to add other projects(ShaDDR, LangChainProject) below -->
+                <!-- <div class="project-card">
+                        <div class="project-card__image">
+                            <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__content_title">
+                                Project Title Project Title Project Title Project Title
+                            </div>
+                            <div class="project-card__content__points project-card__content__style">
+                                <div class="project-card__content__bullet__pointer project-card__content__pointer__style">
+                                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                                </div>
+                                <div class="project-card__content__point__content">
+                                    I worked with 3D models, generating point clouds and training deep learning models, such as
+                                    PointNets, to predict topological features like verts, edges, and faces for creating game
+                                    asset meshes.
+                                </div>
+                            </div>
+                            <div class="project-card__content_link">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                                    Github
+                                </button>
+                            </div>
+                        </div>
+                    </div> -->
+                <!-- <div class="project-card">
+                        <div class="project-card__image">
+                            <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__content_title">
+                                Project Title Project Title Project Title Project Title
+                            </div>
+                            <div class="project-card__content__points project-card__content__style">
+                                <div class="project-card__content__bullet__pointer project-card__content__pointer__style">
+                                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                                </div>
+                                <div class="project-card__content__point__content">
+                                    I worked with 3D models, generating point clouds and training deep learning models, such as
+                                    PointNets, to predict topological features like verts, edges, and faces for creating game
+                                    asset meshes.
+                                </div>
+                            </div>
+                            <div class="project-card__content_link">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                                    Github
+                                </button>
+                            </div>
+                        </div>
+                    </div> -->
+                <!-- Old div class sample -->
+                <!-- <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Point Cloud Compass</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                                Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                                Live Demo
+                            </button>
+                        </div>
+                    </div> -->
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section> -->
+    </section>
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
